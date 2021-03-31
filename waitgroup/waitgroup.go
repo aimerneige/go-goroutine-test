@@ -10,8 +10,6 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(2)
 
-	c := make(chan string)
-
 	go func() {
 		count(5, "Hello")
 		wg.Done()
